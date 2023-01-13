@@ -6,8 +6,11 @@ It is a perfect way for players to relive the glory days of arcade gaming and fo
 SETUP INSTRUCTIONS:
 
 1)Install python in your computer from the official website ‘https://www.python.org/downloads/’.
+
 2)Install the python package manager ‘pip’ by using get-pip.py (https://bootstrap.pypa.io/get-pip.py)  and store it in the same directory where python is installed.
+
 3)Once you have pip installed, use the command ‘pip install pygame’ to install the pygame library in your computer.
+
 4)Now install the game files from the Github repositories and have fun.
 
 “Arcade Adventure" brings together three classic arcade games - Pong, Archery, and Space Invaders - into one thrilling and nostalgic experience. The Pong portion of the game will feature the classic gameplay that has been entertaining players for decades. The player will use paddles to hit a ball back and forth, competing against the computer. The game will feature different difficulty levels to keep the gameplay fresh and exciting. 
