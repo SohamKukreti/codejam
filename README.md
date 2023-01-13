@@ -1,5 +1,3 @@
-HACKATHON SYNOPSIS
-
 The theme of this hackathon is Old School. We have created a retro-style arcade game collection that brings back the nostalgia of the golden age of arcade gaming from the 90’s using Python and Pygame and with an energetic sound track as well. The games are designed to emulate the look and feel of the original arcade machines, complete with authentic sound effects and pixelated graphics. 
 It is a perfect way for players to relive the glory days of arcade gaming and for younger players to experience the games that defined an era.
 
