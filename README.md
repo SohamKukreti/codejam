@@ -11,6 +11,12 @@ SETUP INSTRUCTIONS:
 
 4)Now install the game files from the Github repositories and have fun.
 
+RUNNING INSTRUCTIONS: 
+
+1) Setup the environment on your device.
+
+2) Run the main_menu.py file.
+
 “Arcade Adventure" brings together three classic arcade games - Pong, Archery, and Space Invaders - into one thrilling and nostalgic experience. The Pong portion of the game will feature the classic gameplay that has been entertaining players for decades. The player will use paddles to hit a ball back and forth, competing against the computer. The game will feature different difficulty levels to keep the gameplay fresh and exciting. 
 
 Pong controls: Arrow keys to move up and down
