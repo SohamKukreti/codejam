@@ -15,9 +15,15 @@ SETUP INSTRUCTIONS:
 
 “Arcade Adventure" brings together three classic arcade games - Pong, Archery, and Space Invaders - into one thrilling and nostalgic experience. The Pong portion of the game will feature the classic gameplay that has been entertaining players for decades. The player will use paddles to hit a ball back and forth, competing against the computer. The game will feature different difficulty levels to keep the gameplay fresh and exciting. 
 
-In the Archery section, players will take on the role of an archer, using a bow and arrow to aim and shoot at targets. The game will feature multiple levels, each with a different set of targets and challenges. Players will be able to earn points for accuracy and speed, and compete for the highest score. 
+Pong controls: Arrow keys to move up and down
 
-Finally, the Space Invaders section will challenge players to defend their base from waves of alien invaders(with a surprise here). Using a spaceship, players will have to blast their way through the alien hordes, earning points for each invader they take down. Players will have limited lives and the game will go on till the player uses up all his lives.
+In the Archery section, players will take on the role of an archer, using a bow and arrow to aim and shoot apples. The game has a calm and soothing vibe, a perfect way to destress and enjoy after the onslaughts of the material world.
+
+Arrow Controls: Space to shoot arrow.
+
+Finally, the Space Shooter section will challenge players to defend their base from waves of alien invaders(with a surprise here). Using a spaceship, players will have to blast their way through the alien hordes, earning points for each invader they take down. Players will have limited lives and the game will go on till the player uses up all his lives.
+
+Space Shooter Control: WASD to move, Space to shoot.
 
 All of this has been combined in an interactive menu page.
 
