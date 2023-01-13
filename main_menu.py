@@ -11,7 +11,7 @@ pygame.display.set_icon(icon)
 mixer.music.load("assets\\arcadebackground.wav")
 mixer.music.play(-1)
 buttonsound=mixer.Sound("assets\\buttonsound.mp3")
-buttonsound.set_volume(0.5)
+buttonsound.set_volume(0.2)
 
 def mainmenu():
     image=pygame.image.load("assets\\arrowtext.png")

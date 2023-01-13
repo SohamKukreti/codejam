@@ -15,6 +15,7 @@ def pong():
     icon=pygame.image.load("assets\\ping-pong.png")
     pygame.display.set_icon(icon)
     mixer.music.load("assets\\pongbmg.wav")
+    mixer.music.set_volume(0.4)
     mixer.music.play(-1)
     paddlesound=mixer.Sound("assets\\paddlesound.wav")
     wallsound=mixer.Sound('assets\\wallsound.wav')
