@@ -19,9 +19,9 @@ def pong():
     paddlesound=mixer.Sound("assets\\paddlesound.wav")
     wallsound=mixer.Sound('assets\\wallsound.wav')
     pointsound=mixer.Sound('assets\\pointsound.wav')
-    pointsound.set_volume(0.3)
-    wallsound.set_volume(0.3)
-    paddlesound.set_volume(0.3)
+    pointsound.set_volume(0.2)
+    wallsound.set_volume(0.2)
+    paddlesound.set_volume(0.2)
 
 
 

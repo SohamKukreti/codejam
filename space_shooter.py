@@ -12,7 +12,7 @@ def space():
     mixer.music.load('assets\\space.mp3')
 
     #Set preferred volume
-    mixer.music.set_volume(0.2)
+    mixer.music.set_volume(0.5)
 
     #Play the music
     mixer.music.play(-1)
@@ -172,8 +172,10 @@ def space():
         FPS = 60
         level = 0
         lives = 5
-        main_font = pygame.font.SysFont("comicsans", 50)
-        lost_font = pygame.font.SysFont("comicsans", 60)
+        #main_font = pygame.font.SysFont("comicsans", 50)
+        main_font = pygame.font.Font("assets\\alagard.ttf", 50)
+        lost_font = pygame.font.Font("assets\\alagard.ttf", 60)
+        #lost_font = pygame.font.SysFont("comicsans", 60)
 
         enemies = []
         wave_length = 5
@@ -262,20 +264,28 @@ def space():
             player.move_lasers(-laser_vel, enemies)
 
     def main_menu():
-        title_font = pygame.font.SysFont("comicsans", 70)
+        title_font = pygame.font.Font("assets\\super.ttf", 40)
         run = True
         while run:
             WIN.blit(BG, (0,0))
-            title_label = title_font.render("Press Mouse to Start", 1, (155,155,155))
-            WIN.blit(title_label, (WIDTH/2 - title_label.get_width()/2, 350))
+            title_label1 = title_font.render("Press Mouse to Start", 1, (155,155,155))
+            title_label2 = title_font.render("Press Escape for menu", 1, (155, 155, 155))
+            WIN.blit(title_label1, (WIDTH/2 - title_label1.get_width()/2, 350))
+            WIN.blit(title_label2, (WIDTH / 2 - title_label1.get_width() / 2, 425))
             pygame.display.update()
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     run = False
+                    pygame.quit()
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     main()
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_ESCAPE:
+                        run= False
+                        mixer.music.load("assets\\arcadebackground.wav")
+                        mixer.music.play(-1)
+                        screen = pygame.display.set_mode((800, 600))
 
-        pygame.quit()
 
 
     main_menu()
