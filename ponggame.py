@@ -12,14 +12,14 @@ def pong():
     screen=pygame.display.set_mode((screen_width,screen_height))
     clock=pygame.time.Clock()
     pygame.display.set_caption("Pong!")
-    icon=pygame.image.load("assets\\ping-pong.png")
+    icon=pygame.image.load("assets/ping-pong.png")
     pygame.display.set_icon(icon)
-    mixer.music.load("assets\\pongbmg.wav")
+    mixer.music.load("assets/pongbmg.wav")
     mixer.music.set_volume(0.4)
     mixer.music.play(-1)
-    paddlesound=mixer.Sound("assets\\paddlesound.wav")
-    wallsound=mixer.Sound('assets\\wallsound.wav')
-    pointsound=mixer.Sound('assets\\pointsound.wav')
+    paddlesound=mixer.Sound("assets/paddlesound.wav")
+    wallsound=mixer.Sound('assets/wallsound.wav')
+    pointsound=mixer.Sound('assets/pointsound.wav')
     pointsound.set_volume(0.2)
     wallsound.set_volume(0.2)
     paddlesound.set_volume(0.2)
@@ -32,7 +32,7 @@ def pong():
     ball=pygame.Rect(screen_width/2 - 15,screen_height/2 - 15,20,20)
     player=pygame.Rect(screen_width - 20,screen_height/2 - 70,10,140)
     opponent=pygame.Rect(10,screen_height/2 - 70,10,140)
-    gameover=pygame.image.load('assets\\gameover.png')
+    gameover=pygame.image.load('assets/gameover.png')
     playercolor=random.choice(((115,255,87),(255,255,255),(87,87,255),(255,245,87)))
     ballcolor=(235,35,35)
     playerscore=0
@@ -65,7 +65,7 @@ def pong():
                     player_speed-=7
                 if event.key==pygame.K_ESCAPE:
                     running=False
-                    mixer.music.load("assets\\arcadebackground.wav")
+                    mixer.music.load("assets/arcadebackground.wav")
                     mixer.music.play(-1)
                 if event.key==pygame.K_RETURN:
                     if game_state=='over':

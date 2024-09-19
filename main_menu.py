@@ -6,21 +6,21 @@ from arrowusingpygame import arrow
 from space_shooter import space
 pygame.init()
 screen=pygame.display.set_mode((800,600))
-icon=pygame.image.load("assets\\arcade.png")
+icon=pygame.image.load("assets/arcade.png")
 pygame.display.set_icon(icon)
-mixer.music.load("assets\\arcadebackground.wav")
+mixer.music.load("assets/arcadebackground.wav")
 mixer.music.play(-1)
-buttonsound=mixer.Sound("assets\\buttonsound.mp3")
+buttonsound=mixer.Sound("assets/buttonsound.mp3")
 buttonsound.set_volume(0.2)
 
 def mainmenu():
-    image=pygame.image.load("assets\\arrowtext.png")
-    image2=pygame.image.load("assets\\pongtext.png")
-    image3=pygame.image.load("assets\\spaceshootertext.png")
+    image=pygame.image.load("assets/arrowtext.png")
+    image2=pygame.image.load("assets/pongtext.png")
+    image3=pygame.image.load("assets/spaceshootertext.png")
     imageold=image
     image2old=image2
     image3old=image3
-    background=pygame.image.load("assets\\arcadebackground.png")
+    background=pygame.image.load("assets/arcadebackground.png")
     pygame.display.set_caption("Main Menu")
     click=False
     button1 = pygame.Rect(50, 250, 200, 75)

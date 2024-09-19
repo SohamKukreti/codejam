@@ -9,16 +9,16 @@ def arrow():
     pygame.init()
     screen=pygame.display.set_mode((800,600))
     pygame.display.set_caption("Arrow!")
-    icon=pygame.image.load("assets\\target.png")
+    icon=pygame.image.load("assets/target.png")
     pygame.display.set_icon(icon)
-    background=pygame.image.load("assets\\arrowbackground.png")
-    bowimage=pygame.image.load('assets\\bow128.png')
-    arrowimage=pygame.image.load('assets\\arrow128.png')
+    background=pygame.image.load("assets/arrowbackground.png")
+    bowimage=pygame.image.load('assets/bow128.png')
+    arrowimage=pygame.image.load('assets/arrow128.png')
     clock=pygame.time.Clock()
-    appleimage=pygame.image.load('assets\\apple.png')
-    mixer.music.load("assets\\arrowbgm.wav")
+    appleimage=pygame.image.load('assets/apple.png')
+    mixer.music.load("assets/arrowbgm.wav")
     mixer.music.play(-1)
-    arrowsound=mixer.Sound("assets\\arrowshoot.mp3")
+    arrowsound=mixer.Sound("assets/arrowshoot.mp3")
     def arrow(x,y):
         screen.blit(arrowimage,(x,y))
     def bow(x,y):
@@ -36,10 +36,10 @@ def arrow():
     appleY=random.randint(100,400)
     appleYspeed=0
     score=0
-    textfont=pygame.font.Font("assets\\alagard.ttf",48)
+    textfont=pygame.font.Font("assets/alagard.ttf",48)
     life=3
     userinfo=''
-    gameoverimg=pygame.image.load('assets\\gameover.png')
+    gameoverimg=pygame.image.load('assets/gameover.png')
     
     def show_score():
         score_text=textfont.render("Score : " + str(score),True,(255,255,255))
@@ -66,7 +66,7 @@ def arrow():
                     arrowYchange=0
                 if event.key==pygame.K_ESCAPE:
                     running=False
-                    mixer.music.load("assets\\arcadebackground.wav")
+                    mixer.music.load("assets/arcadebackground.wav")
                     mixer.music.play(-1)
                 if event.key==pygame.K_RETURN:
                     if life==0:

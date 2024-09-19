@@ -9,7 +9,7 @@ def space():
     mixer.init()
 
     #Load audio file
-    mixer.music.load('assets\\space.mp3')
+    mixer.music.load('assets/space.mp3')
 
     #Set preferred volume
     mixer.music.set_volume(0.5)
@@ -25,9 +25,9 @@ def space():
 
     # Load images
 
-    RED_SPACE_SHIP = pygame.image.load(os.path.join("assets", "pixel_ship_red_small.jpg"))
-    GREEN_SPACE_SHIP = pygame.image.load(os.path.join("assets", "pixel_ship_green_small.jpg"))
-    BLUE_SPACE_SHIP = pygame.image.load(os.path.join("assets", "pixel_ship_blue_small.jpg"))
+    RED_SPACE_SHIP = pygame.image.load(os.path.join("assets", "pixel_ship_red_small.png"))
+    GREEN_SPACE_SHIP = pygame.image.load(os.path.join("assets", "pixel_ship_green_small.png"))
+    BLUE_SPACE_SHIP = pygame.image.load(os.path.join("assets", "pixel_ship_blue_small.png"))
     RED_SPACE_SHIP = pygame.transform.scale(RED_SPACE_SHIP, (50, 50))
     GREEN_SPACE_SHIP = pygame.transform.scale(GREEN_SPACE_SHIP, (50, 50))
     BLUE_SPACE_SHIP = pygame.transform.scale(BLUE_SPACE_SHIP, (50, 50))
@@ -173,8 +173,8 @@ def space():
         level = 0
         lives = 5
         #main_font = pygame.font.SysFont("comicsans", 50)
-        main_font = pygame.font.Font("assets\\alagard.ttf", 50)
-        lost_font = pygame.font.Font("assets\\alagard.ttf", 60)
+        main_font = pygame.font.Font("assets/alagard.ttf", 50)
+        lost_font = pygame.font.Font("assets/alagard.ttf", 60)
         #lost_font = pygame.font.SysFont("comicsans", 60)
 
         enemies = []
@@ -264,7 +264,7 @@ def space():
             player.move_lasers(-laser_vel, enemies)
 
     def main_menu():
-        title_font = pygame.font.Font("assets\\super.ttf", 40)
+        title_font = pygame.font.Font("assets/super.ttf", 40)
         run = True
         while run:
             WIN.blit(BG, (0,0))
@@ -282,7 +282,7 @@ def space():
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:
                         run= False
-                        mixer.music.load("assets\\arcadebackground.wav")
+                        mixer.music.load("assets/arcadebackground.wav")
                         mixer.music.play(-1)
                         screen = pygame.display.set_mode((800, 600))
 
